@@ -40,7 +40,7 @@ public class datadrivenTestNG {
 	
 	@Test(dataProvider = "dp")
 	void testLogin(String email,String pass) throws InterruptedException {
-    
+          
         driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Login']")).click();
 		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(pass);

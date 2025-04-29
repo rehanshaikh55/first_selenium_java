@@ -20,7 +20,7 @@ public class luscars {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://dotpitchtechnologies.com/luscars");
+		driver.get("https://uat-bugbounty.nonprod.syfe.com/");
 		List<WebElement> links = driver.findElements(By.tagName("a"));
         System.out.println("Total links found: " + links.size());
 
@@ -79,14 +79,14 @@ public class luscars {
 */
 
 
-
+/*
 		@Test
 		
 		
 		public void testPageLoadPerformance() {
 			long startTime = System.currentTimeMillis();
 			WebDriver driver = new ChromeDriver();
-			driver.get("https://dotpitchtechnologies.com/luscars");
+			driver.get("https://dotpitchtechnologies.com/");
 			long endTime = System.currentTimeMillis();
 			long loadTime = endTime - startTime;
 			
@@ -97,4 +97,5 @@ public class luscars {
 		
 			
 		}
+*/
 }
